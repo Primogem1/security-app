@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5429/mydb
+    username: dev
+    password: dev
+    driver-class-name: org.postgresql.Driver
+  sql:
+    init:
+      schema-locations: classpath*:schema.sql
+      mode: always
+#      data-locations: classpath*:demo-data.sql
